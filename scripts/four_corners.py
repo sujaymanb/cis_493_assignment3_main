@@ -10,13 +10,39 @@ from geometry_msgs.msg import Point
 class map_nav():
     def __init__(self):
         self.xssw = 0.365
-        self.yssw = -0.347
-        
+        self.yssw =-0.347
+        self.xsse = 0.441
+        self.ysse =-3.242
+        self.xnne = 8.181
+        self.ynne =-4.418
+        self.xwnw = 8.244
+        self.ywnw =-0.510
         rospy.init_node('map_nav', anonymous=False)
         self.goalReached = self.moveToGoal(self.xssw, self.yssw)
 
         if(self.goalReached):
             rospy.loginfo("SSW corner reached")
+        else:
+            rospy.loginfo("Failed to reach goal")
+
+        self.goalReached = self.moveToGoal(self.xsse,self.ysse)
+
+        if(self.goalReached):
+            rospy.loginfo("SSE corner reached")
+        else:
+            rospy.loginfo("Failed to reach goal")
+
+        self.goalReached = self.moveToGoal(self.xnne,self.ynne)
+
+        if(self.goalReached):
+            rospy.loginfo("NNE corner reached")
+        else:
+            rospy.loginfo("Failed to reach goal")
+
+        self.goalReached = self.moveToGoal(self.xwnw,self.ywnw)
+
+        if(self.goalReached):
+            rospy.loginfo("WNW corner reached")
         else:
             rospy.loginfo("Failed to reach goal")
 
