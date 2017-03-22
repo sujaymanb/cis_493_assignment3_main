@@ -9,10 +9,10 @@ from geometry_msgs.msg import Point
 
 class map_nav():
     def __init__(self):
-        self.xssw = 0.365
-        self.yssw =-0.347
-        self.xsse = 0.441
-        self.ysse =-3.242
+        self.xssw = 0.477
+        self.yssw = 0.086
+        self.xsse = 0.364
+        self.ysse =-3.218
         self.xnne = 8.181
         self.ynne =-4.418
         self.xwnw = 8.244
