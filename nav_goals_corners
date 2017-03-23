@@ -2,6 +2,8 @@ nav goals:
 =========
 ssw corner
 =========
+(has been modified)
+
 header: 
   seq: 2
   stamp: 
@@ -11,9 +13,9 @@ header:
 pose: 
   pose: 
     position: 
-      x: 0.363545656204
-      y: -0.347653865814
-      z: 0.0
+      x: 0.477
+      y: 0.086
+	  z: 0.0
     orientation: 
       x: 0.0
       y: 0.0
@@ -34,8 +36,8 @@ header:
 pose: 
   pose: 
     position: 
-      x: 0.440660953522
-      y: -3.24284744263
+      x: 0.364
+      y: -3.218
       z: 0.0
     orientation: 
       x: 0.0
